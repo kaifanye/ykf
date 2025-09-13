@@ -1,0 +1,44 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- 渐变背景 -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#333333" />
+    </linearGradient>
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- 抽象摄影元素 -->
+  <g opacity="0.2" filter="url(#noise)">
+    <!-- 相机轮廓 -->
+    <path d="M960 400 L1060 400 L1080 430 L1200 430 L1200 700 L720 700 L720 430 L840 430 L860 400 Z" fill="none" stroke="#ffffff" stroke-width="5" />
+    
+    <!-- 镜头 -->
+    <circle cx="960" cy="550" r="100" fill="none" stroke="#ffffff" stroke-width="5" />
+    <circle cx="960" cy="550" r="80" fill="none" stroke="#ffffff" stroke-width="3" />
+    <circle cx="960" cy="550" r="60" fill="none" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- 光圈图案 -->
+    <path d="M760 550 L860 450 L1060 450 L1160 550 L1060 650 L860 650 Z" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.5" />
+  </g>
+  
+  <!-- 光线效果 -->
+  <g opacity="0.1">
+    <line x1="0" y1="0" x2="1920" y2="1080" stroke="#ffffff" stroke-width="1" />
+    <line x1="1920" y1="0" x2="0" y2="1080" stroke="#ffffff" stroke-width="1" />
+    <line x1="960" y1="0" x2="960" y2="1080" stroke="#ffffff" stroke-width="1" />
+    <line x1="0" y1="540" x2="1920" y2="540" stroke="#ffffff" stroke-width="1" />
+  </g>
+  
+  <!-- 光斑效果 -->
+  <circle cx="300" cy="200" r="100" fill="#ffffff" opacity="0.05" />
+  <circle cx="1600" cy="800" r="150" fill="#ffffff" opacity="0.03" />
+  <circle cx="1200" cy="300" r="80" fill="#ffffff" opacity="0.04" />
+  <circle cx="700" cy="900" r="120" fill="#ffffff" opacity="0.02" />
+</svg>

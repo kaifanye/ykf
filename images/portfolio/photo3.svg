@@ -1,0 +1,70 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- 人像摄影 -->
+  <defs>
+    <linearGradient id="background" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2f2f2" />
+      <stop offset="100%" stop-color="#d9d9d9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="url(#background)" />
+  
+  <!-- 抽象人物轮廓 -->
+  <g transform="translate(400, 450)">
+    <!-- 头部 -->
+    <circle cx="0" cy="-200" r="100" fill="#333" />
+    
+    <!-- 身体 -->
+    <path d="M-80,-100 L-100,200 L100,200 L80,-100 Z" fill="#4d4d4d" />
+    
+    <!-- 肩膀 -->
+    <path d="M-80,-100 L-150,-50 L-120,0 L-80,-50 Z" fill="#4d4d4d" />
+    <path d="M80,-100 L150,-50 L120,0 L80,-50 Z" fill="#333" />
+    
+    <!-- 手臂 -->
+    <path d="M-120,0 L-140,100 L-100,120 L-90,20 Z" fill="#4d4d4d" />
+    <path d="M120,0 L90,150 L120,160 L140,10 Z" fill="#333" />
+  </g>
+  
+  <!-- 光影效果 -->
+  <g opacity="0.1">
+    <ellipse cx="550" cy="300" rx="200" ry="300" fill="#ffffff" />
+    <ellipse cx="250" cy="600" rx="150" ry="250" fill="#000000" />
+  </g>
+  
+  <!-- 抽象背景元素 -->
+  <g opacity="0.05">
+    <rect x="0" y="0" width="800" height="20" fill="#000000" />
+    <rect x="0" y="40" width="800" height="15" fill="#000000" />
+    <rect x="0" y="70" width="800" height="10" fill="#000000" />
+    <rect x="0" y="90" width="800" height="5" fill="#000000" />
+    
+    <rect x="0" y="980" width="800" height="20" fill="#000000" />
+    <rect x="0" y="950" width="800" height="15" fill="#000000" />
+    <rect x="0" y="930" width="800" height="10" fill="#000000" />
+    <rect x="0" y="915" width="800" height="5" fill="#000000" />
+  </g>
+  
+  <!-- 装饰元素 -->
+  <g opacity="0.2">
+    <circle cx="150" cy="150" r="50" fill="#d4af37" />
+    <circle cx="650" cy="850" r="70" fill="#d4af37" />
+  </g>
+  
+  <!-- 相机光圈图案 -->
+  <g transform="translate(400, 150)" opacity="0.1">
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#000000" stroke-width="2" />
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#000000" stroke-width="2" />
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#000000" stroke-width="2" />
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#000000" stroke-width="2" />
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#000000" stroke-width="1" />
+    <line x1="0" y1="-80" x2="0" y2="80" stroke="#000000" stroke-width="1" />
+    <line x1="-60" y1="-60" x2="60" y2="60" stroke="#000000" stroke-width="1" />
+    <line x1="60" y1="-60" x2="-60" y2="60" stroke="#000000" stroke-width="1" />
+  </g>
+  
+  <!-- 光斑效果 -->
+  <circle cx="600" cy="300" r="100" fill="#ffffff" opacity="0.2" />
+  <circle cx="550" cy="250" r="50" fill="#ffffff" opacity="0.3" />
+</svg>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="叶凯帆摄影作品集 - 专业摄影师个人网站，展示风景、人像和纪实摄影作品">
+    <meta name="keywords" content="摄影,作品集,摄影师,风景摄影,人像摄影,纪实摄影">
+    <title>叶凯帆摄影作品集</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="images/photos/DSC09992_polarr.jpg" as="image">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">叶凯帆摄影</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">首页</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="hero-content">
+                    <h1>叶凯帆摄影作品集</h1>
+                    <p>捕捉光影之美，定格瞬间感动</p>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h2>精选作品</h2>
+                <div class="portfolio-grid">
+                    <!-- 人像类作品 -->
+                    <div class="portfolio-item fade-in" data-id="1">
+                        <img src="photo/人像类/BLUE(你好).jpg" alt="BLUE(你好)">
+                        <div class="portfolio-item-info">
+                            <h3>BLUE(你好)</h3>
+                            <p>照片: BLUE(你好)</p>
+                            <span class="category">人像</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="2">
+                        <img src="photo/人像类/BLUE（感受）.jpg" alt="BLUE（感受）">
+                        <div class="portfolio-item-info">
+                            <h3>BLUE（感受）</h3>
+                            <p>照片: BLUE（感受）</p>
+                            <span class="category">人像</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="3">
+                        <img src="photo/人像类/哇.你看（宝石展览）.JPG" alt="哇.你看（宝石展览）">
+                        <div class="portfolio-item-info">
+                            <h3>哇.你看（宝石展览）</h3>
+                            <p>照片: 哇.你看（宝石展览）</p>
+                            <span class="category">人像</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="4">
+                        <img src="photo/人像类/面具.jpg" alt="面具">
+                        <div class="portfolio-item-info">
+                            <h3>面具</h3>
+                            <p>照片: 面具</p>
+                            <span class="category">人像</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 动物类作品 -->
+                    <div class="portfolio-item fade-in" data-id="5">
+                        <img src="photo/动物类/白鹭.jpeg" alt="白鹭">
+                        <div class="portfolio-item-info">
+                            <h3>白鹭</h3>
+                            <p>照片: 白鹭</p>
+                            <span class="category">动物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="6">
+                        <img src="photo/动物类/络新妇属蜘蛛.jpg" alt="络新妇属蜘蛛">
+                        <div class="portfolio-item-info">
+                            <h3>络新妇属蜘蛛</h3>
+                            <p>照片: 络新妇属蜘蛛</p>
+                            <span class="category">动物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="7">
+                        <img src="photo/动物类/花间舞者1.jpg" alt="花间舞者1">
+                        <div class="portfolio-item-info">
+                            <h3>花间舞者1</h3>
+                            <p>照片: 花间舞者1</p>
+                            <span class="category">动物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="8">
+                        <img src="photo/动物类/花间舞者2.jpg" alt="花间舞者2">
+                        <div class="portfolio-item-info">
+                            <h3>花间舞者2</h3>
+                            <p>照片: 花间舞者2</p>
+                            <span class="category">动物</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 矿物类作品 -->
+                    <div class="portfolio-item fade-in" data-id="9">
+                        <img src="photo/矿物类/孔雀石（飞思相机拍摄）.jpg" alt="孔雀石（飞思相机拍摄）">
+                        <div class="portfolio-item-info">
+                            <h3>孔雀石（飞思相机拍摄）</h3>
+                            <p>照片: 孔雀石（飞思相机拍摄）</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="10">
+                        <img src="photo/矿物类/水晶.jpg" alt="水晶">
+                        <div class="portfolio-item-info">
+                            <h3>水晶</h3>
+                            <p>照片: 水晶</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="11">
+                        <img src="photo/矿物类/水晶（白）.jpg" alt="水晶（白）">
+                        <div class="portfolio-item-info">
+                            <h3>水晶（白）</h3>
+                            <p>照片: 水晶（白）</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="12">
+                        <img src="photo/矿物类/玛瑙（切片）.jpg" alt="玛瑙（切片）">
+                        <div class="portfolio-item-info">
+                            <h3>玛瑙（切片）</h3>
+                            <p>照片: 玛瑙（切片）</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="13">
+                        <img src="photo/矿物类/琥珀.jpg" alt="琥珀">
+                        <div class="portfolio-item-info">
+                            <h3>琥珀</h3>
+                            <p>照片: 琥珀</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="14">
+                        <img src="photo/矿物类/紫水晶.jpg" alt="紫水晶">
+                        <div class="portfolio-item-info">
+                            <h3>紫水晶</h3>
+                            <p>照片: 紫水晶</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="15">
+                        <img src="photo/矿物类/红水晶.jpg" alt="红水晶">
+                        <div class="portfolio-item-info">
+                            <h3>红水晶</h3>
+                            <p>照片: 红水晶</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="16">
+                        <img src="photo/矿物类/绿莹石.jpg" alt="绿莹石">
+                        <div class="portfolio-item-info">
+                            <h3>绿莹石</h3>
+                            <p>照片: 绿莹石</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="17">
+                        <img src="photo/矿物类/绿萤石（青）.jpg" alt="绿萤石（青）">
+                        <div class="portfolio-item-info">
+                            <h3>绿萤石（青）</h3>
+                            <p>照片: 绿萤石（青）</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="18">
+                        <img src="photo/矿物类/钻石.jpg" alt="钻石">
+                        <div class="portfolio-item-info">
+                            <h3>钻石</h3>
+                            <p>照片: 钻石</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="19">
+                        <img src="photo/矿物类/陨石（美国）.jpg" alt="陨石（美国）">
+                        <div class="portfolio-item-info">
+                            <h3>陨石（美国）</h3>
+                            <p>照片: 陨石（美国）</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="20">
+                        <img src="photo/矿物类/陨石（首饰）.jpg" alt="陨石（首饰）">
+                        <div class="portfolio-item-info">
+                            <h3>陨石（首饰）</h3>
+                            <p>照片: 陨石（首饰）</p>
+                            <span class="category">矿物</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 纪实类作品 -->
+                    <div class="portfolio-item fade-in" data-id="21">
+                        <img src="photo/纪实类/五华楼.jpg" alt="五华楼">
+                        <div class="portfolio-item-info">
+                            <h3>五华楼</h3>
+                            <p>照片: 五华楼</p>
+                            <span class="category">纪实</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="22">
+                        <img src="photo/纪实类/众.jpg" alt="众">
+                        <div class="portfolio-item-info">
+                            <h3>众</h3>
+                            <p>照片: 众</p>
+                            <span class="category">纪实</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="23">
+                        <img src="photo/纪实类/卓别林（中场）.jpg" alt="卓别林（中场）">
+                        <div class="portfolio-item-info">
+                            <h3>卓别林（中场）</h3>
+                            <p>照片: 卓别林（中场）</p>
+                            <span class="category">纪实</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="24">
+                        <img src="photo/纪实类/卓别林（落幕）.jpg" alt="卓别林（落幕）">
+                        <div class="portfolio-item-info">
+                            <h3>卓别林（落幕）</h3>
+                            <p>照片: 卓别林（落幕）</p>
+                            <span class="category">纪实</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="25">
+                        <img src="photo/纪实类/喜洲古镇.jpg" alt="喜洲古镇">
+                        <div class="portfolio-item-info">
+                            <h3>喜洲古镇</h3>
+                            <p>照片: 喜洲古镇</p>
+                            <span class="category">纪实</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="26">
+                        <img src="photo/纪实类/高楼大厦.jpg" alt="高楼大厦">
+                        <div class="portfolio-item-info">
+                            <h3>高楼大厦</h3>
+                            <p>照片: 高楼大厦</p>
+                            <span class="category">纪实</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 艺术类作品 -->
+                    <div class="portfolio-item fade-in" data-id="27">
+                        <img src="photo/艺术类/眼.jpg" alt="眼">
+                        <div class="portfolio-item-info">
+                            <h3>眼</h3>
+                            <p>照片: 眼</p>
+                            <span class="category">艺术</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="28">
+                        <img src="photo/艺术类/红首.jpg" alt="红首">
+                        <div class="portfolio-item-info">
+                            <h3>红首</h3>
+                            <p>照片: 红首</p>
+                            <span class="category">艺术</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="29">
+                        <img src="photo/艺术类/红首（倒影）.jpg" alt="红首（倒影）">
+                        <div class="portfolio-item-info">
+                            <h3>红首（倒影）</h3>
+                            <p>照片: 红首（倒影）</p>
+                            <span class="category">艺术</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="30">
+                        <img src="photo/艺术类/麻雀（水墨）.jpg" alt="麻雀（水墨）">
+                        <div class="portfolio-item-info">
+                            <h3>麻雀（水墨）</h3>
+                            <p>照片: 麻雀（水墨）</p>
+                            <span class="category">艺术</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 风景类作品 -->
+                    <div class="portfolio-item fade-in" data-id="31">
+                        <img src="photo/风景类/大理（油画）.jpg" alt="大理（油画）">
+                        <div class="portfolio-item-info">
+                            <h3>大理（油画）</h3>
+                            <p>照片: 大理（油画）</p>
+                            <span class="category">风景</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="32">
+                        <img src="photo/风景类/暴雨.jpg" alt="暴雨">
+                        <div class="portfolio-item-info">
+                            <h3>暴雨</h3>
+                            <p>照片: 暴雨</p>
+                            <span class="category">风景</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 其他作品 -->
+                    <div class="portfolio-item fade-in" data-id="33">
+                        <img src="photo/朋友之间.jpeg" alt="朋友之间">
+                        <div class="portfolio-item-info">
+                            <h3>朋友之间</h3>
+                            <p>照片: 朋友之间</p>
+                            <span class="category">其他</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-id="34">
+                        <img src="photo/矿物宝石（书籍）.jpeg" alt="矿物宝石（书籍）">
+                        <div class="portfolio-item-info">
+                            <h3>矿物宝石（书籍）</h3>
+                            <p>照片: 矿物宝石（书籍）</p>
+                            <span class="category">其他</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="show-more-btn">显示更多作品</button>
+            </section>
+
+            <!-- 精选作品查看模态框 -->
+            <div id="portfolioModal" class="certificate-modal">
+                <div class="certificate-modal-content">
+                    <span class="portfolio-modal-close">&times;</span>
+                    <img id="portfolioModalImg" src="" alt="作品大图">
+                </div>
+            </div>
+
+            <section id="about">
+                <h2>关于我</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="photo/叶凯帆.jpg" alt="叶凯帆个人照片">
+                    </div>
+                    <div class="about-text">
+                        <p>我是叶凯帆，一名热爱摄影的专业摄影师。我专注于风景、人像和纪实摄影，致力于通过镜头捕捉世界的独特瞬间和情感。</p>
+                        <p>我的作品曾在多个摄影展览中展出，并获得了多项摄影奖项。我相信每一张照片都有其独特的故事和情感，我希望通过我的作品，能够让观者感受到那一刻的美丽与感动。</p>
+                    </div>
+                </div>
+                <div class="awards-section">
+                    <h3>荣誉奖项</h3>
+                    <div class="certificates-container">
+                        <!-- 第一行证书 -->
+                        <div class="certificates-row" id="certificatesRow1">
+                            <div class="certificates-track">
+                                <!-- 原始证书 -->
+                                <div class="certificate-item" data-index="1">
+                                    <img src="Certificate/1.jpeg" alt="证书1">
+                                </div>
+                                <div class="certificate-item" data-index="2">
+                                    <img src="Certificate/2.jpeg" alt="证书2">
+                                </div>
+                                <div class="certificate-item" data-index="3">
+                                    <img src="Certificate/3.jpeg" alt="证书3">
+                                </div>
+                                <div class="certificate-item" data-index="4">
+                                    <img src="Certificate/4.jpeg" alt="证书4">
+                                </div>
+                                <div class="certificate-item" data-index="5">
+                                    <img src="Certificate/5.jpeg" alt="证书5">
+                                </div>
+                                <!-- 复制的证书（用于无缝滚动） -->
+                                <div class="certificate-item" data-index="1">
+                                    <img src="Certificate/1.jpeg" alt="证书1">
+                                </div>
+                                <div class="certificate-item" data-index="2">
+                                    <img src="Certificate/2.jpeg" alt="证书2">
+                                </div>
+                                <div class="certificate-item" data-index="3">
+                                    <img src="Certificate/3.jpeg" alt="证书3">
+                                </div>
+                                <div class="certificate-item" data-index="4">
+                                    <img src="Certificate/4.jpeg" alt="证书4">
+                                </div>
+                                <div class="certificate-item" data-index="5">
+                                    <img src="Certificate/5.jpeg" alt="证书5">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 第二行证书 -->
+                        <div class="certificates-row" id="certificatesRow2">
+                            <div class="certificates-track">
+                                <!-- 原始证书 -->
+                                <div class="certificate-item" data-index="6">
+                                    <img src="Certificate/6.jpeg" alt="证书6">
+                                </div>
+                                <div class="certificate-item" data-index="7">
+                                    <img src="Certificate/7.jpeg" alt="证书7">
+                                </div>
+                                <div class="certificate-item" data-index="8">
+                                    <img src="Certificate/8.jpeg" alt="证书8">
+                                </div>
+                                <div class="certificate-item" data-index="9">
+                                    <img src="Certificate/9.jpeg" alt="证书9">
+                                </div>
+                                <div class="certificate-item" data-index="1">
+                                    <img src="Certificate/1.jpeg" alt="证书1">
+                                </div>
+                                <!-- 复制的证书（用于无缝滚动） -->
+                                <div class="certificate-item" data-index="6">
+                                    <img src="Certificate/6.jpeg" alt="证书6">
+                                </div>
+                                <div class="certificate-item" data-index="7">
+                                    <img src="Certificate/7.jpeg" alt="证书7">
+                                </div>
+                                <div class="certificate-item" data-index="8">
+                                    <img src="Certificate/8.jpeg" alt="证书8">
+                                </div>
+                                <div class="certificate-item" data-index="9">
+                                    <img src="Certificate/9.jpeg" alt="证书9">
+                                </div>
+                                <div class="certificate-item" data-index="1">
+                                    <img src="Certificate/1.jpeg" alt="证书1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 证书查看模态框 -->
+                    <div id="certificateModal" class="certificate-modal">
+                        <div class="certificate-modal-content">
+                            <span class="certificate-modal-close">&times;</span>
+                            <img id="certificateModalImg" src="" alt="证书大图">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>联系方式</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> yzkhfl@qq.com</p>
+                        <p><i class="fas fa-phone"></i> +86 180 2988 6425</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-weibo"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 叶凯帆摄影作品集. 保留所有权利.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

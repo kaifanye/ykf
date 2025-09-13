@@ -1,0 +1,154 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- 街头瞬间 -->
+  <defs>
+    <linearGradient id="street" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#808080" />
+      <stop offset="100%" stop-color="#4d4d4d" />
+    </linearGradient>
+    <linearGradient id="building" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b3b3b3" />
+      <stop offset="100%" stop-color="#999999" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#e6e6e6" />
+  
+  <!-- 街道 -->
+  <rect x="0" y="600" width="800" height="400" fill="url(#street)" />
+  
+  <!-- 建筑物 -->
+  <rect x="0" y="0" width="300" height="600" fill="url(#building)" />
+  <rect x="500" y="100" width="300" height="500" fill="url(#building)" />
+  
+  <!-- 建筑物窗户 -->
+  <g fill="#f2f2f2">
+    <!-- 左侧建筑窗户 -->
+    <rect x="50" y="50" width="40" height="60" />
+    <rect x="120" y="50" width="40" height="60" />
+    <rect x="190" y="50" width="40" height="60" />
+    
+    <rect x="50" y="150" width="40" height="60" />
+    <rect x="120" y="150" width="40" height="60" />
+    <rect x="190" y="150" width="40" height="60" />
+    
+    <rect x="50" y="250" width="40" height="60" />
+    <rect x="120" y="250" width="40" height="60" />
+    <rect x="190" y="250" width="40" height="60" />
+    
+    <rect x="50" y="350" width="40" height="60" />
+    <rect x="120" y="350" width="40" height="60" />
+    <rect x="190" y="350" width="40" height="60" />
+    
+    <rect x="50" y="450" width="40" height="60" />
+    <rect x="120" y="450" width="40" height="60" />
+    <rect x="190" y="450" width="40" height="60" />
+    
+    <!-- 右侧建筑窗户 -->
+    <rect x="550" y="150" width="40" height="60" />
+    <rect x="620" y="150" width="40" height="60" />
+    <rect x="690" y="150" width="40" height="60" />
+    
+    <rect x="550" y="250" width="40" height="60" />
+    <rect x="620" y="250" width="40" height="60" />
+    <rect x="690" y="250" width="40" height="60" />
+    
+    <rect x="550" y="350" width="40" height="60" />
+    <rect x="620" y="350" width="40" height="60" />
+    <rect x="690" y="350" width="40" height="60" />
+    
+    <rect x="550" y="450" width="40" height="60" />
+    <rect x="620" y="450" width="40" height="60" />
+    <rect x="690" y="450" width="40" height="60" />
+  </g>
+  
+  <!-- 人物剪影 -->
+  <g fill="#1a1a1a">
+    <!-- 人物1 -->
+    <circle cx="200" cy="650" r="15" />
+    <rect x="195" y="665" width="10" height="30" />
+    <rect x="185" y="695" width="30" height="20" />
+    <rect x="185" y="715" width="5" height="25" />
+    <rect x="210" y="715" width="5" height="25" />
+    
+    <!-- 人物2 -->
+    <circle cx="400" cy="680" r="15" />
+    <rect x="395" y="695" width="10" height="30" />
+    <rect x="385" y="725" width="30" height="20" />
+    <rect x="385" y="745" width="5" height="25" />
+    <rect x="410" y="745" width="5" height="25" />
+    
+    <!-- 人物3 -->
+    <circle cx="600" cy="630" r="15" />
+    <rect x="595" y="645" width="10" height="30" />
+    <rect x="585" y="675" width="30" height="20" />
+    <rect x="585" y="695" width="5" height="25" />
+    <rect x="610" y="695" width="5" height="25" />
+  </g>
+  
+  <!-- 路灯 -->
+  <g>
+    <rect x="150" y="600" width="5" height="100" fill="#1a1a1a" />
+    <circle cx="152.5" cy="600" r="10" fill="#ffcc00" opacity="0.8" />
+    <circle cx="152.5" cy="600" r="15" fill="#ffcc00" opacity="0.3" />
+    
+    <rect x="450" y="600" width="5" height="100" fill="#1a1a1a" />
+    <circle cx="452.5" cy="600" r="10" fill="#ffcc00" opacity="0.8" />
+    <circle cx="452.5" cy="600" r="15" fill="#ffcc00" opacity="0.3" />
+    
+    <rect x="750" y="600" width="5" height="100" fill="#1a1a1a" />
+    <circle cx="752.5" cy="600" r="10" fill="#ffcc00" opacity="0.8" />
+    <circle cx="752.5" cy="600" r="15" fill="#ffcc00" opacity="0.3" />
+  </g>
+  
+  <!-- 道路标记 -->
+  <g fill="#ffffff" stroke="none">
+    <rect x="380" y="650" width="40" height="10" />
+    <rect x="380" y="700" width="40" height="10" />
+    <rect x="380" y="750" width="40" height="10" />
+    <rect x="380" y="800" width="40" height="10" />
+    <rect x="380" y="850" width="40" height="10" />
+    <rect x="380" y="900" width="40" height="10" />
+    <rect x="380" y="950" width="40" height="10" />
+  </g>
+  
+  <!-- 汽车 -->
+  <g transform="translate(300, 800)">
+    <rect x="0" y="0" width="100" height="30" rx="10" fill="#cc0000" />
+    <rect x="10" y="-15" width="80" height="20" rx="5" fill="#cc0000" />
+    <circle cx="25" cy="30" r="10" fill="#1a1a1a" />
+    <circle cx="75" cy="30" r="10" fill="#1a1a1a" />
+    <rect x="85" y="5" width="10" height="5" fill="#ffcc00" />
+    <rect x="5" y="5" width="10" height="5" fill="#ff3333" />
+  </g>
+  
+  <!-- 自行车 -->
+  <g transform="translate(500, 750)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#1a1a1a" stroke-width="2" />
+    <circle cx="50" cy="0" r="15" fill="none" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="0" y1="0" x2="20" y2="-30" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="20" y1="-30" x2="40" y2="-10" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="40" y1="-10" x2="50" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="20" y1="-30" x2="20" y2="-40" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#1a1a1a" stroke-width="1" />
+  </g>
+  
+  <!-- 雨滴效果 -->
+  <g stroke="#b3b3b3" stroke-width="1" opacity="0.5">
+    <line x1="100" y1="0" x2="90" y2="50" />
+    <line x1="200" y1="0" x2="190" y2="50" />
+    <line x1="300" y1="0" x2="290" y2="50" />
+    <line x1="400" y1="0" x2="390" y2="50" />
+    <line x1="500" y1="0" x2="490" y2="50" />
+    <line x1="600" y1="0" x2="590" y2="50" />
+    <line x1="700" y1="0" x2="690" y2="50" />
+    
+    <line x1="150" y1="100" x2="140" y2="150" />
+    <line x1="250" y1="100" x2="240" y2="150" />
+    <line x1="350" y1="100" x2="340" y2="150" />
+    <line x1="450" y1="100" x2="440" y2="150" />
+    <line x1="550" y1="100" x2="540" y2="150" />
+    <line x1="650" y1="100" x2="640" y2="150" />
+    <line x1="750" y1="100" x2="740" y2="150" />
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <!-- 背景 -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#333" />
+      <stop offset="100%" stop-color="#000" />
+    </radialGradient>
+    
+    <!-- 玛瑙渐变 -->
+    <linearGradient id="agateGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5DEB3" />
+      <stop offset="20%" stop-color="#D2B48C" />
+      <stop offset="40%" stop-color="#CD853F" />
+      <stop offset="60%" stop-color="#D2691E" />
+      <stop offset="80%" stop-color="#8B4513" />
+      <stop offset="100%" stop-color="#A0522D" />
+    </linearGradient>
+    
+    <!-- 环状渐变 -->
+    <radialGradient id="ringGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#F5DEB3" />
+      <stop offset="20%" stop-color="#D2B48C" />
+      <stop offset="40%" stop-color="#CD853F" />
+      <stop offset="60%" stop-color="#D2691E" />
+      <stop offset="80%" stop-color="#8B4513" />
+      <stop offset="100%" stop-color="#A0522D" />
+    </radialGradient>
+    
+    <!-- 光泽效果 -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="url(#bg)" />
+  
+  <!-- 玛瑙矿石 -->
+  <g transform="translate(400, 500)" filter="url(#glow)">
+    <!-- 主体形状 - 不规则切片 -->
+    <path d="M-120,-80 C-100,-150 100,-150 120,-80 C150,-20 150,80 120,150 C50,180 -50,180 -120,150 C-150,80 -150,-20 -120,-80 Z" fill="url(#agateGradient)" />
+    
+    <!-- 内部环状纹理 -->
+    <path d="M-90,-60 C-75,-110 75,-110 90,-60 C110,-15 110,60 90,110 C40,135 -40,135 -90,110 C-110,60 -110,-15 -90,-60 Z" fill="none" stroke="#8B4513" stroke-width="3" opacity="0.7" />
+    <path d="M-60,-40 C-50,-75 50,-75 60,-40 C75,-10 75,40 60,75 C25,90 -25,90 -60,75 C-75,40 -75,-10 -60,-40 Z" fill="none" stroke="#CD853F" stroke-width="3" opacity="0.7" />
+    <path d="M-30,-20 C-25,-40 25,-40 30,-20 C40,-5 40,20 30,40 C15,45 -15,45 -30,40 C-40,20 -40,-5 -30,-20 Z" fill="none" stroke="#D2B48C" stroke-width="3" opacity="0.7" />
+    
+    <!-- 中心孔洞 -->
+    <path d="M-15,-10 C-12,-20 12,-20 15,-10 C20,-2 20,10 15,20 C7,22 -7,22 -15,20 C-20,10 -20,-2 -15,-10 Z" fill="#FFFFFF" opacity="0.8" />
+    
+    <!-- 光泽高光 -->
+    <ellipse cx="-40" cy="-30" rx="30" ry="20" fill="#FFFFFF" opacity="0.2" />
+    <ellipse cx="50" cy="40" rx="25" ry="15" fill="#FFFFFF" opacity="0.15" />
+  </g>
+  
+  <!-- 反射效果 -->
+  <g transform="translate(400, 800) scale(1, -0.3) skewX(10)" opacity="0.3">
+    <path d="M-120,-80 C-100,-150 100,-150 120,-80 C150,-20 150,80 120,150 C50,180 -50,180 -120,150 C-150,80 -150,-20 -120,-80 Z" fill="url(#agateGradient)" />
+  </g>
+</svg>
